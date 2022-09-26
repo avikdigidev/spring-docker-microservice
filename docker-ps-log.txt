@@ -1,0 +1,156 @@
+PS D:\Projects\JavaProjects\spring-microservice> docker build -t spring-microservice .
+[+] Building 0.0s (1/2)
+ => [internal] load build definition from Dockerfile                                                                             0.0s
+ => => transferring dockerfile: 2B                                                                                               0.0s
+failed to solve with frontend dockerfile.v0: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2055849069/Dockerfile: no such file or directory
+PS D:\Projects\JavaProjects\spring-microservice> ls
+
+
+    Directory: D:\Projects\JavaProjects\spring-microservice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-09-2022     15:55                .idea
+d-----        19-09-2022     23:44                .mvn
+d-----        19-09-2022     23:44                src
+d-----        21-09-2022     15:50                target
+-a----        20-09-2022     00:05            397 .gitignore
+-a----        21-09-2022     15:59            153 DockerFile
+-a----        19-09-2022     23:44          10284 mvnw
+-a----        19-09-2022     23:44           6734 mvnw.cmd
+-a----        21-09-2022     15:50           2212 pom.xml
+-a----        19-09-2022     23:44            959 ReadMe.md
+-a----        21-09-2022     14:59           8464 spring-microservice.iml
+
+
+PS D:\Projects\JavaProjects\spring-microservice> docker build -t spring-microservice
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+PS D:\Projects\JavaProjects\spring-microservice> docker build -t spring-microservice .
+[+] Building 0.0s (1/2)
+ => [internal] load build definition from Dockerfile                                                                             0.0s
+ => => transferring dockerfile: 2B                                                                                               0.0s
+failed to solve with frontend dockerfile.v0: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount470719451/Dockerfile: no such file or directory
+PS D:\Projects\JavaProjects\spring-microservice> docker build -t spring-microservice .
+[+] Building 0.0s (1/2)
+ => [internal] load build definition from Dockerfile                                                                             0.0s
+ => => transferring dockerfile: 2B                                                                                               0.0s
+failed to solve with frontend dockerfile.v0: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2769046626/Dockerfile: no such file or directory
+PS D:\Projects\JavaProjects\spring-microservice> docker build -t spring-microservice . -f DockerFile.txt
+[+] Building 31.5s (8/8) FINISHED
+ => [internal] load build definition from DockerFile.txt                                                                                                                                                                                                                  0.0s
+ => => transferring dockerfile: 196B                                                                                                                                                                                                                                      0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                                         0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                                           0.0s
+ => [internal] load metadata for docker.io/library/openjdk:11                                                                                                                                                                                                             4.3s
+ => [auth] library/openjdk:pull token for registry-1.docker.io                                                                                                                                                                                                            0.0s
+ => [internal] load build context                                                                                                                                                                                                                                         0.1s
+ => => transferring context: 17.63MB                                                                                                                                                                                                                                      0.1s
+ => [1/2] FROM docker.io/library/openjdk:11@sha256:99bac5bf83633e3c7399aed725c8415e7b569b54e03e4599e580fc9cdb7c21ab                                                                                                                                                      21.3s
+ => => resolve docker.io/library/openjdk:11@sha256:99bac5bf83633e3c7399aed725c8415e7b569b54e03e4599e580fc9cdb7c21ab                                                                                                                                                       0.0s
+ => => sha256:99bac5bf83633e3c7399aed725c8415e7b569b54e03e4599e580fc9cdb7c21ab 1.04kB / 1.04kB                                                                                                                                                                            0.0s
+ => => sha256:e81b7f317654b0f26d3993e014b04bcb29250339b11b9de41e130feecd4cd43c 1.79kB / 1.79kB                                                                                                                                                                            0.0s
+ => => sha256:47a932d998b743b9b0bcce55aa8ede77de94a6a183c8a67dec9d5e3b8ce0faa7 6.26kB / 6.26kB                                                                                                                                                                            0.0s
+ => => sha256:001c52e26ad57e3b25b439ee0052f6692e5c0f2d5d982a00a8819ace5e521452 55.00MB / 55.00MB                                                                                                                                                                          4.2s
+ => => sha256:d9d4b9b6e964657da49910b495173d6c4f0d9bc47b3b44273cf82fd32723d165 5.16MB / 5.16MB                                                                                                                                                                            2.7s
+ => => sha256:2068746827ec1b043b571e4788693eab7e9b2a95301176512791f8c317a2816a 10.88MB / 10.88MB                                                                                                                                                                          3.2s
+ => => sha256:9daef329d35093868ef75ac8b7c6eb407fa53abbcb3a264c218c2ec7bca716e6 54.58MB / 54.58MB                                                                                                                                                                          8.0s
+ => => sha256:d85151f15b6683b98f21c3827ac545188b1849efb14a1049710ebc4692de3dd5 5.42MB / 5.42MB                                                                                                                                                                            4.2s
+ => => extracting sha256:001c52e26ad57e3b25b439ee0052f6692e5c0f2d5d982a00a8819ace5e521452                                                                                                                                                                                 2.9s
+ => => sha256:66223a710990a0ae7162aeed80417d30303afa3f24aafa57aa30348725e2230b 213B / 213B                                                                                                                                                                                4.6s
+ => => sha256:db38d58ec8ab4111b072f6700f978a51985acd252aabce3be377f25162e68301 202.07MB / 202.07MB                                                                                                                                                                       16.9s
+ => => extracting sha256:d9d4b9b6e964657da49910b495173d6c4f0d9bc47b3b44273cf82fd32723d165                                                                                                                                                                                 0.3s
+ => => extracting sha256:2068746827ec1b043b571e4788693eab7e9b2a95301176512791f8c317a2816a                                                                                                                                                                                 0.3s
+ => => extracting sha256:9daef329d35093868ef75ac8b7c6eb407fa53abbcb3a264c218c2ec7bca716e6                                                                                                                                                                                 3.4s
+ => => extracting sha256:d85151f15b6683b98f21c3827ac545188b1849efb14a1049710ebc4692de3dd5                                                                                                                                                                                 0.2s
+ => => extracting sha256:66223a710990a0ae7162aeed80417d30303afa3f24aafa57aa30348725e2230b                                                                                                                                                                                 0.0s
+ => => extracting sha256:db38d58ec8ab4111b072f6700f978a51985acd252aabce3be377f25162e68301                                                                                                                                                                                 4.1s
+ => [2/2] COPY target/spring-microservice-0.0.1.war spring-microservice-0.0.1.war                                                                                                                                                                                         5.5s
+ => exporting to image                                                                                                                                                                                                                                                    0.2s
+ => => exporting layers                                                                                                                                                                                                                                                   0.2s
+ => => writing image sha256:f83364a28d54d9f869e81dfc0fc20e50f2e644784d3d2469f67c0cc9f617095c                                                                                                                                                                              0.0s
+ => => naming to docker.io/library/spring-microservice                                                                                                                                                                                                                    0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS D:\Projects\JavaProjects\spring-microservice> docker images
+REPOSITORY                           TAG       IMAGE ID       CREATED          SIZE
+spring-microservice                  latest    f83364a28d54   17 seconds ago   672MB
+my-image-2                           latest    5ae1df9369ca   15 hours ago     77.8MB
+my-ubuntu-image                      latest    f75dbb58d913   15 hours ago     77.8MB
+redis                                latest    2460522297a1   7 days ago       117MB
+ubuntu                               latest    2dc39ba059dc   2 weeks ago      77.8MB
+k8s.gcr.io/kube-apiserver            v1.25.0   4d2edfd10d3e   4 weeks ago      128MB
+k8s.gcr.io/kube-scheduler            v1.25.0   bef2cf311509   4 weeks ago      50.6MB
+k8s.gcr.io/kube-controller-manager   v1.25.0   1a54c86c03a6   4 weeks ago      117MB
+k8s.gcr.io/kube-proxy                v1.25.0   58a9a0c6d96f   4 weeks ago      61.7MB
+gcr.io/k8s-minikube/kicbase          v0.0.33   b7ab23e98277   7 weeks ago      1.14GB
+k8s.gcr.io/pause                     3.8       4873874c08ef   3 months ago     711kB
+k8s.gcr.io/etcd                      3.5.4-0   a8a176a5d5d6   3 months ago     300MB
+k8s.gcr.io/coredns                   v1.9.3    5185b96f0bec   3 months ago     48.8MB
+docker/desktop-vpnkit-controller     v2.0      8c2c38aa676e   16 months ago    21MB
+docker/desktop-storage-provisioner   v2.0      99f89471f470   17 months ago    41.9MB
+PS D:\Projects\JavaProjects\spring-microservice> docker run -p 8080:8080 spring-microservice
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.3)
+
+2022-09-21 10:39:54.723  INFO 1 --- [           main] c.a.s.m.SpringMicroserviceApplication    : Starting SpringMicroserviceApplication v0.0.1 using Java 11.0.16 on 61da7bcc76c6 with PID 1 (/spring-microservice-0.0.1.war started by root in /)
+2022-09-21 10:39:54.727  INFO 1 --- [           main] c.a.s.m.SpringMicroserviceApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 10:39:55.696  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2022-09-21 10:39:55.713  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-21 10:39:55.713  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-21 10:39:56.169  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-21 10:39:56.170  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1379 ms
+2022-09-21 10:39:56.535  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2022-09-21 10:39:56.548  INFO 1 --- [           main] c.a.s.m.SpringMicroserviceApplication    : Started SpringMicroserviceApplication in 2.276 seconds (JVM running for 2.656)
+PS D:\Projects\JavaProjects\spring-microservice> docker run -p 8585:8585 spring-microservice
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.3)
+
+2022-09-21 10:44:11.927  INFO 1 --- [           main] c.a.s.m.SpringMicroserviceApplication    : Starting SpringMicroserviceApplication v0.0.1 using Java 11.0.16 on 3261a08f791c with PID 1 (/spring-microservice-0.0.1.war started by root in /)
+2022-09-21 10:44:11.930  INFO 1 --- [           main] c.a.s.m.SpringMicroserviceApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 10:44:12.885  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2022-09-21 10:44:12.895  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-21 10:44:12.896  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-21 10:44:13.374  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-21 10:44:13.374  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1391 ms
+2022-09-21 10:44:13.693  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2022-09-21 10:44:13.704  INFO 1 --- [           main] c.a.s.m.SpringMicroserviceApplication    : Started SpringMicroserviceApplication in 2.217 seconds (JVM running for 2.579)
+2022-09-21 10:44:33.866  INFO 1 --- [nio-8585-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-21 10:44:33.867  INFO 1 --- [nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-21 10:44:33.869  INFO 1 --- [nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+PS D:\Projects\JavaProjects\spring-microservice> docker run -dp 80:8585 spring-microservice
+d6283e14252eb2c98c50d3c11137d88422d5a8f90d75c24ad94fa734acf1341c
+PS D:\Projects\JavaProjects\spring-microservice> docker ps
+CONTAINER ID   IMAGE                 COMMAND                  CREATED          STATUS          PORTS                  NAMES
+d6283e14252e   spring-microservice   "java -jar /spring-m…"   17 seconds ago   Up 16 seconds   0.0.0.0:80->8585/tcp   vigorous_hamilton
+PS D:\Projects\JavaProjects\spring-microservice> docker container ls -a
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED              STATUS                            PORTS                                                                                                                                  NAMES
+d6283e14252e   spring-microservice                   "java -jar /spring-m…"   42 seconds ago       Up 41 seconds                     0.0.0.0:80->8585/tcp                                                                                                                   vigorous_hamilton
+3261a08f791c   spring-microservice                   "java -jar /spring-m…"   About a minute ago   Exited (143) About a minute ago                                                                                                                                          admiring_driscoll
+61da7bcc76c6   spring-microservice                   "java -jar /spring-m…"   6 minutes ago        Exited (143) 2 minutes ago                                                                                                                                               nice_albattani
+24dab55216c4   gcr.io/k8s-minikube/kicbase:v0.0.33   "/usr/local/bin/entr…"   5 days ago           Exited (255) 5 days ago           127.0.0.1:49157->22/tcp, 127.0.0.1:49156->2376/tcp, 127.0.0.1:49155->5000/tcp, 127.0.0.1:49154->8443/tcp, 127.0.0.1:49153->32443/tcp   minikube
+PS D:\Projects\JavaProjects\spring-microservice> docker stop vigorous_hamilton
+vigorous_hamilton
+PS D:\Projects\JavaProjects\spring-microservice> docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+PS D:\Projects\JavaProjects\spring-microservice> docker ps -l
+CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS                        PORTS     NAMES
+d6283e14252e   spring-microservice   "java -jar /spring-m…"   4 minutes ago   Exited (143) 15 seconds ago             vigorous_hamilton
+PS D:\Projects\JavaProjects\spring-microservice>
